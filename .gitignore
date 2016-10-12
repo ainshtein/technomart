@@ -1,0 +1,9 @@
+node_modules/
+bower_components/
+psd/
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
