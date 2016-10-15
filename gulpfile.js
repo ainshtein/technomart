@@ -13,27 +13,27 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     plumber = require('gulp-plumber'),
     notify = require('gulp-notify'),
-    wiredep = require('gulp-wiredep'),
+    // wiredep = require('gulp-wiredep'),
     useref = require('gulp-useref'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload;
 
 var path = {
-    build: { 
+    build: {
         html: 'build/',
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
         js: 'build/js/'
     },
-    src: { 
-        html: 'src/*.pug', 
+    src: {
+        html: 'src/*.pug',
         css: 'src/scss/main.scss',
-        img: 'src/img/**/*.*', 
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         js: 'src/js/main.js'
     },
-    watch: { 
+    watch: {
         html: 'src/**/*.pug',
         css: 'src/scss/**/*.scss',
         js: 'src/js/**/*.js',
@@ -68,15 +68,15 @@ gulp.task('html:build', function () {
                 }
             })
         }))
-        .pipe(wiredep({ //Добавим ссылки на плагины bower
-            directory: 'bower_components/'
-        }))
+        // .pipe(wiredep({ //Добавим ссылки на плагины bower
+        //     directory: 'bower_components/'
+        // }))
         .pipe(pug({pretty: true}))//Скомпилируем
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .on('end', function() { //запускаем useref по завершению html
             useref();
         })
-        .pipe(reload({stream: true})); //И перезагрузим сервер 
+        .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 gulp.task('js:build', function () {
@@ -101,7 +101,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass().on('error', sass.logError)) //Скомпилируем
         .pipe(prefixer({
-                browsers: ['last 5 versions'], 
+                browsers: ['last 5 versions'],
                 cascade: false})) //Добавим вендорные префиксы
         .pipe(cleanCSS()) //Сожмем
         .pipe(sourcemaps.write('.'))
