@@ -8,32 +8,29 @@ html(lang="ru")
     meta(name="description" content="краткое описание сайта")
     meta(name="author" content="ainshtein")
     link(rel="stylesheet" href="css/main.css")
-    //- script(defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
-    script(defer src="js/main.js")
   body
     header.header-main
       div.header-main__top
         div.container
-          div.logo
-            h1 Техномарт
+          div.logo Техномарт
           div.search
-            label.search__label(for="search-text-field") Поиск по сайту
-            input.search__input(type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30")
+            form(action="https://echo.htmlacademy.ru" method="get")
+              input.search__input(type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30")
           div.bookmarks
             a.bookmarks__link(href="#") Закладки:
-              output.bookmarks__result 0
+              span.bookmarks__result 0
           div.bag.bag_active
             a.bag__link(href="#") Корзина:
-              output.bag__result 0
+              span.bag__result 0
           a.btn.btn_green(href="#") Оформить заказ
       div.header-main__content.container
-        h2.header-main__title Интернет-магазин строительных материалов и инструментов для ремонта
+        h1.header-main__title Интернет-магазин строительных материалов и инструментов для ремонта
         div.header-main__contacts
           a.contacts__link(href="tel:+78125550555") +7 (812) 555-05-55
           p.contacts__text г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         div.user-block
-          a.user-block__link.user-block__link_sign-in Войти
-          a.user-block__link.user-block__link_sign-up Регистрация
+          a.user-block__link.user-block__link_sign-in(href="#") Войти
+          a.user-block__link.user-block__link_sign-up(href="#") Регистрация
       nav.menu.container
         ul.menu__list
           li.menu__item
@@ -41,7 +38,7 @@ html(lang="ru")
           li.menu__item
             a.menu__link(href="#") Компания
           li.menu__item
-            a.menu__link(href="#") Каталог
+            a.menu__link(href="catalog.html") Каталог
           li.menu__item
             a.menu__link(href="#") Новости
           li.menu__item
@@ -54,115 +51,97 @@ html(lang="ru")
       div.container
         div.promo
           div.promo__top
-            div.promo__card
+            div.promo__card.promo__card_new
               div.promo__content
-                h3.promo__title Материалы
+                h2.promo__title Материалы
                 a.btn(href="#") На любой вкус
-              div.promo__mark
             div.promo__card
               div.promo__content
-                h3.promo__title Инструмент
+                h2.promo__title Инструмент
                 a.btn(href="#") На все случаи
             div.promo__card
               div.promo__content
-                h3.promo__title Техника
+                h2.promo__title Техника
                 a.btn(href="#") Для стройки
           div.promo__bottom
             div.promo__bottom_left
               div#slider.owl-carousel
                 div.slide.slide_first
                   div.slide__content
-                    h3.slide__title Перфораторы
+                    h2.slide__title Перфораторы
                     p.slide__text Настоящие мужские игрушки
                   a.btn.btn_red.btn_big(href="#") Открыть каталог
                 div.slide.slide_second
                   div.slide__content
-                    h3.slide__title Дрели
+                    h2.slide__title Дрели
                     p.slide__text Соседям на радость
                   a.btn.btn_red.btn_big(href="#") Открыть каталог
             div.promo__bottom_right
               div.promo__card
                 div.promo__content
-                  h3.promo__title Скидки 50%
+                  h2.promo__title Скидки 50%
                   a.btn(href="#") На 350 товаров
               div.promo__card
                 div.promo__content
-                  h3.promo__title Доставка
+                  h2.promo__title Доставка
                   a.btn(href="#") Бесплатно
-        div.popular
-          div.popular-products
-            h2.content__title Популярные товары:
-              a.btn.btn_red.btn_big(href="#") Все популярные товары
-            div.product
-              div.product__picture
-                img.product__imgage(src="img/bosh-bfg-9000.jpg" height="164" width="184" alt="Перфоратор BOSCH BFG 9000")
-              h3.product__title Перфоратор BOSCH BFG 9000
-              span.product__price 25500 р.
-                span.old-price 32500 р.
+        div.popular-products
+          h2.content__title Популярные товары:
+            a.btn.btn_red.btn_big(href="#") Все популярные товары
+          div.product
+            div.product__picture
+              img.product__image(src="img/bosh-bfg-9000.jpg" height="164" width="184" alt="Перфоратор BOSCH BFG 9000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
-            div.product
-              div.product__picture
-                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
-              h3.product__title Перфоратор BOSCH BFG 3000
-              span.product__price 15500 р.
-                span.old-price 25500 р.
+            h3.product__title Перфоратор BOSCH BFG 9000
+            span.product__price 25500 р.
+              span.old-price 32500 р.
+          div.product
+            div.product__picture
+              img.product__image(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
-            div.product
-              div.product__picture
-                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
-              h3.product__title Перфоратор BOSCH BFG 6000
-              span.product__price 25500 р.
-                span.old-price 30500 р.
+            h3.product__title Перфоратор BOSCH BFG 3000
+            span.product__price 15500 р.
+              span.old-price 25500 р.
+          div.product
+            div.product__picture
+              img.product__image(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
-            div.product
-              div.product__picture.product__picture_new
-                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
-              h3.product__title Перфоратор BOSCH BFG 2000
-              span.product__price 12500 р.
+            h3.product__title Перфоратор BOSCH BFG 6000
+            span.product__price 25500 р.
+              span.old-price 30500 р.
+          div.product.product_new
+            div.product__picture
+              img.product__image(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
-          div.popular-brands
-            h2.content__title Популярные производители:
-              a.btn.btn_red.btn_big(href="#") Все производители
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-bosch.jpg" height="37" width="126" alt="Брэнд Bosh")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-makita.jpg" height="40" width="123" alt="Брэнд Makita")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-dewalt.jpg" height="44" width="146" alt="Брэнд DeWALT")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-interscol.jpg" height="200" width="88" alt="Брэнд Интерскол")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-hitachi.jpg" height="31" width="169" alt="Брэнд Hitachi")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-lg.jpg" height="73" width="121" alt="Брэнд LG")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-aeg.jpg" height="96" width="151" alt="Брэнд AEG")
-            div.brand
-              a.brand__link(href="#")
-                div.brand__picture
-                  img.brand__imgage(src="img/brand-metabo.jpg" height="69" width="204" alt="Брэнд Metabo")
+            h3.product__title Перфоратор BOSCH BFG 2000
+            span.product__price 12500 р.
+        div.popular-brands
+          h2.content__title Популярные производители:
+            a.btn.btn_red.btn_big(href="#") Все производители
+          a.brand(href="#")
+            img.brand__image(src="img/brand-bosch.png" height="37" width="126" alt="Брэнд Bosh")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-makita.png" height="40" width="123" alt="Брэнд Makita")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-dewalt.png" height="44" width="146" alt="Брэнд DeWALT")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-interscol.png" height="200" width="88" alt="Брэнд Интерскол")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-hitachi.png" height="31" width="169" alt="Брэнд Hitachi")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-lg.png" height="73" width="121" alt="Брэнд LG")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-aeg.png" height="96" width="151" alt="Брэнд AEG")
+          a.brand(href="#")
+            img.brand__image(src="img/brand-metabo.png" height="69" width="204" alt="Брэнд Metabo")
       div.services
         div.container
           h2.services__title Сервисы
@@ -210,15 +189,13 @@ html(lang="ru")
             p.about__text.
              Вы можете забрать товар сами, заехав в наш офис:
             a.map-link(href="#")
-              div.map-link__picture
-                img.map-link__imgage(src="img/about-map.jpg" height="158" width="300" alt="Карта")
+              img.map-link__image(src="img/about-map.jpg" height="158" width="300" alt="Карта")
             a.btn.btn_red(href="#")
     footer.footer-main
       div.footer-main__top
         div.container
           div.footer-main__top_left
-            div.footer-logo
-              h2.footer-logo__title Техномарт
+            div.footer-logo Техномарт
             p.footer-contacts г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
           div.footer-main__top_right
             div.footer-nav-top
@@ -245,17 +222,14 @@ html(lang="ru")
                   a.footer-nav-bottom__link Спецпредложения
       div.footer-main__bottom
         div.container
-          div.copyright
-            p.copyright__text &copy; 2010–2016 Компания «Техномарт» Все права защищены
+          div.copyright &copy; 2010–2016 Компания «Техномарт» Все права защищены
           div.socials
             a.socials__link.socials__link_vk(href="#") Вконтакте
             a.socials__link.socials__link_fb(href="#") Фейсбук
             a.socials__link.socials__link_tw(href="#") Твитер
-          div.email
-            h3.email__title Обратная связь:
+          div.email Обратная связь:
             a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
-          div.design
-            h3.design__title Разработано -
+          div.design Разработано -
             a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
     div.modal-content
       button.modal-content__close(type="button" title="Закрыть") Закрыть
@@ -266,16 +240,15 @@ html(lang="ru")
             input.modal-content__input(type="text" name="user-name" id="user-name-field" placeholder="Представьтесь, пожалуйста" maxlength="50")
           div.modal-content__right
             label.modal-content__label(for="user-name-field") Ваш e-mail:
-            input.modal-content__input(type="text" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30"
-
-
-            )
+            input.modal-content__input(type="text" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30")
         label.modal-content__label(for="email-text-field") Текст письма:
         textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300")
         button.btn.btn_red(type="submit") Отправить
     div.modal-map
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       div.map-container#map
+    //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="js/main.js")
 
 
 
