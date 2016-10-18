@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ТЕХНОМАРТ - КАТАЛОГ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="разные, ключевые, слова">
+    <meta name="description" content="краткое описание сайта">
+    <meta name="author" content="ainshtein">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header-main__top">
+        <div class="container">
+          <div class="logo"><a class="logo__link" href="index.html">
+              <h1>Техномарт</h1></a></div>
+          <div class="search">
+            <label class="search__label" for="search-text-field">Поиск по сайту</label>
+            <input class="search__input" type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30">
+          </div>
+          <div class="bookmarks"><a class="bookmarks__link" href="#">Закладки:
+              <output class="bookmarks__result">0</output></a></div>
+          <div class="bag bag_active"><a class="bag__link" href="#">Корзина:
+              <output class="bag__result">0</output></a></div><a class="btn btn_green" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="header-main__content container">
+        <h2 class="header-main__title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+        <div class="header-main__contacts"><a class="contacts__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="contacts__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="user-block">
+          <div class="user-block__active"><a class="user-block__link-name" href="#">
+              <output class="user-name-current">Равшан Джамшутович</output><a class="user-block__link-sign-out">Выйти</a></a><a class="user-block__link-order" href="#">Мои заказы</a><a class="user-block__link-login" href="#">Личный кабинет</a></div>
+        </div>
+      </div>
+      <nav class="menu container">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Компания</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Домой</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инструмент</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Перфораторы</a></li>
+          </ul>
+        </div>
+        <h2 class="content__title">Перфораторы</h2>
+        <aside class="catalog__filter">
+          <div class="filter">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <h3 class="filter__heading"></h3>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Цена:</legend>
+                <div class="range">
+                  <div class="range__control">
+                    <div class="range__scale">
+                      <div class="range__bar">Шкала</div>
+                    </div>
+                    <div class="range__toggle range__toggle_min">Переключатель минимум</div>
+                    <div class="range__toggle range__toggle_max">Переключатель максимум</div>
+                  </div>
+                  <div class="range__fields">
+                    <label class="range__label range__label_left" for="price-min-field">от
+                      <input class="range__input" type="text" name="price-min" id="price-min-field" value="0" maxlength="9">
+                    </label>
+                    <label class="range__label range__label_right" for="price-max-field">до
+                      <input class="range__input" type="text" name="price-max" id="price-max-field" value="30000" maxlength="9">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Производители</legend>
+                <input class="filter__checkbox" type="checkbox" name="bosch" id="bosch-field" checked>
+                <label class="filter__label" for="bosch-field">Bosh</label>
+                <input class="filter__checkbox" type="checkbox" name="interskol" id="interskol-field">
+                <label class="filter__label" for="interskol-field">Интерскол</label>
+                <input class="filter__checkbox" type="checkbox" name="makita" id="makita-field" checked>
+                <label class="filter__label" for="makita-field">Makita</label>
+                <input class="filter__checkbox" type="checkbox" name="dewalt" id="dewalt-field" checked>
+                <label class="filter__label" for="dewalt-field">Dewalt</label>
+                <input class="filter__checkbox" type="checkbox" name="hitachi" id="hitachi-field" checked>
+                <label class="filter__label" for="hitachi-field">Dewalt</label>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Питание:</legend>
+                <input class="filter__radio" type="radio" name="puncher" id="puncher-battery-field" value="battery">
+                <label class="filter__label" for="puncher-battery-field">Аккумуляторные</label>
+                <input class="filter__radio" type="radio" name="puncher" id="puncher-battery-field" value="networking">
+                <label class="filter__label" for="puncher-battery-field">Сетевые</label>
+              </fieldset>
+              <button class="btn btn_submit" type="submit">Показать</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer-main">
+      <div class="footer-main__top">
+        <div class="container">
+          <div class="footer-main__top_left">
+            <div class="footer-logo">
+              <h2 class="footer-logo__title">Техномарт</h2>
+            </div>
+            <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+          </div>
+          <div class="footer-main__top_right">
+            <div class="footer-nav-top">
+              <ul class="footer-nav-top__list">
+                <li class="footer-nav-top__item"><a class="footer-nav-top__link">Компания</a></li>
+                <li class="footer-nav-top__item"><a class="footer-nav-top__link">Новости</a></li>
+                <li class="footer-nav-top__item"><a class="footer-nav-top__link">Каталог</a></li>
+                <li class="footer-nav-top__item"><a class="footer-nav-top__link">Доставка</a></li>
+                <li class="footer-nav-top__item"><a class="footer-nav-top__link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-bottom">
+              <ul class="footer-nav-bottom__list">
+                <li class="footer-nav-bottom__item"><a class="footer-nav-bottom__link">Материалы</a></li>
+                <li class="footer-nav-bottom__item"><a class="footer-nav-bottom__link">Техника</a></li>
+                <li class="footer-nav-bottom__item"><a class="footer-nav-bottom__link">Инструмент</a></li>
+                <li class="footer-nav-bottom__item"><a class="footer-nav-bottom__link">Спецпредложения</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main__bottom">
+        <div class="container">
+          <div class="copyright">
+            <p class="copyright__text">&copy; 2010–2016 Компания «Техномарт» Все права защищены</p>
+          </div>
+          <div class="socials"><a class="socials__link socials__link_vk" href="#">Вконтакте</a><a class="socials__link socials__link_fb" href="#">Фейсбук</a><a class="socials__link socials__link_tw" href="#">Твитер</a></div>
+          <div class="email">
+            <h3 class="email__title">Обратная связь:</h3><a class="email__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="design">
+            <h3 class="design__title">Разработано -</h3><a class="design__link" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

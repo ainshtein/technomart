@@ -1,0 +1,152 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title ТЕХНОМАРТ - КАТАЛОГ
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="keywords" content="разные, ключевые, слова")
+    meta(name="description" content="краткое описание сайта")
+    meta(name="author" content="ainshtein")
+    link(rel="stylesheet" href="css/main.css")
+    //- script(defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(defer src="js/main.js")
+  body
+    header.header-main
+      div.header-main__top
+        div.container
+          div.logo
+            a.logo__link(href="index.html")
+              h1 Техномарт
+          div.search
+            label.search__label(for="search-text-field") Поиск по сайту
+            input.search__input(type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30")
+          div.bookmarks
+            a.bookmarks__link(href="#") Закладки:
+              output.bookmarks__result 0
+          div.bag.bag_active
+            a.bag__link(href="#") Корзина:
+              output.bag__result 0
+          a.btn.btn_green(href="#") Оформить заказ
+      div.header-main__content.container
+        h2.header-main__title Интернет-магазин строительных материалов и инструментов для ремонта
+        div.header-main__contacts
+          a.contacts__link(href="tel:+78125550555") +7 (812) 555-05-55
+          p.contacts__text г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        div.user-block
+          div.user-block__active
+            a.user-block__link-name(href="#")
+              output.user-name-current Равшан Джамшутович
+              a.user-block__link-sign-out Выйти
+            a.user-block__link-order(href="#") Мои заказы
+            a.user-block__link-login(href="#") Личный кабинет
+      nav.menu.container
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href="#") Главная
+          li.menu__item
+            a.menu__link(href="#") Компания
+          li.menu__item
+            a.menu__link(href="#") Каталог
+          li.menu__item
+            a.menu__link(href="#") Новости
+          li.menu__item
+            a.menu__link(href="#") Спецпредложения
+          li.menu__item
+            a.menu__link(href="#") Доставка
+          li.menu__item
+            a.menu__link(href="#") Контакты
+    main.catalog
+      div.container
+        div.breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#") Домой
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#") Каталог
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#") Инструмент
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#") Перфораторы
+        h2.content__title Перфораторы
+        aside.catalog__filter
+          div.filter
+            form(action="https://echo.htmlacademy.ru" method="post")
+              h3.filter__heading
+              fieldset.filter__group
+                legend.filter__title Цена:
+                div.range
+                  div.range__control
+                    div.range__scale
+                      div.range__bar Шкала
+                    div.range__toggle.range__toggle_min Переключатель минимум
+                    div.range__toggle.range__toggle_max Переключатель максимум
+                  div.range__fields
+                    label.range__label.range__label_left(for="price-min-field") от
+                      input.range__input(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
+                    label.range__label.range__label_right(for="price-max-field") до
+                      input.range__input(type="text" name="price-max" id="price-max-field" value="30000" maxlength="9")
+              fieldset.filter__group
+                legend.filter__title Производители
+                input.filter__checkbox(type="checkbox" name="bosch" id="bosch-field" checked)
+                label.filter__label(for="bosch-field") Bosh
+                input.filter__checkbox(type="checkbox" name="interskol" id="interskol-field")
+                label.filter__label(for="interskol-field") Интерскол
+                input.filter__checkbox(type="checkbox" name="makita" id="makita-field" checked)
+                label.filter__label(for="makita-field") Makita
+                input.filter__checkbox(type="checkbox" name="dewalt" id="dewalt-field" checked)
+                label.filter__label(for="dewalt-field") Dewalt
+                input.filter__checkbox(type="checkbox" name="hitachi" id="hitachi-field" checked)
+                label.filter__label(for="hitachi-field") Dewalt
+              fieldset.filter__group
+                legend.filter__title Питание:
+                input.filter__radio(type="radio" name="puncher" id="puncher-battery-field" value="battery")
+                label.filter__label(for="puncher-battery-field") Аккумуляторные
+                input.filter__radio(type="radio" name="puncher" id="puncher-battery-field" value="networking")
+                label.filter__label(for="puncher-battery-field") Сетевые
+              button.btn.btn_submit(type="submit") Показать
+
+    footer.footer-main
+      div.footer-main__top
+        div.container
+          div.footer-main__top_left
+            div.footer-logo
+              h2.footer-logo__title Техномарт
+            p.footer-contacts г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+          div.footer-main__top_right
+            div.footer-nav-top
+              ul.footer-nav-top__list
+                li.footer-nav-top__item
+                  a.footer-nav-top__link Компания
+                li.footer-nav-top__item
+                  a.footer-nav-top__link Новости
+                li.footer-nav-top__item
+                  a.footer-nav-top__link Каталог
+                li.footer-nav-top__item
+                  a.footer-nav-top__link Доставка
+                li.footer-nav-top__item
+                  a.footer-nav-top__link Контакты
+            div.footer-nav-bottom
+              ul.footer-nav-bottom__list
+                li.footer-nav-bottom__item
+                  a.footer-nav-bottom__link Материалы
+                li.footer-nav-bottom__item
+                  a.footer-nav-bottom__link Техника
+                li.footer-nav-bottom__item
+                  a.footer-nav-bottom__link Инструмент
+                li.footer-nav-bottom__item
+                  a.footer-nav-bottom__link Спецпредложения
+      div.footer-main__bottom
+        div.container
+          div.copyright
+            p.copyright__text &copy; 2010–2016 Компания «Техномарт» Все права защищены
+          div.socials
+            a.socials__link.socials__link_vk(href="#") Вконтакте
+            a.socials__link.socials__link_fb(href="#") Фейсбук
+            a.socials__link.socials__link_tw(href="#") Твитер
+          div.email
+            h3.email__title Обратная связь:
+            a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
+          div.design
+            h3.design__title Разработано -
+            a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
+

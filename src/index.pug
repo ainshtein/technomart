@@ -29,7 +29,7 @@ html(lang="ru")
       div.header-main__content.container
         h2.header-main__title Интернет-магазин строительных материалов и инструментов для ремонта
         div.header-main__contacts
-          a.contacts__link(href="#") +7 (812) 555-05-55
+          a.contacts__link(href="tel:+78125550555") +7 (812) 555-05-55
           p.contacts__text г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         div.user-block
           a.user-block__link.user-block__link_sign-in Войти
@@ -91,58 +91,78 @@ html(lang="ru")
                   a.btn(href="#") Бесплатно
         div.popular
           div.popular-products
-            h2.popular__title Популярные товары:
+            h2.content__title Популярные товары:
               a.btn.btn_red.btn_big(href="#") Все популярные товары
             div.product
-              div.product__pic
-                img.product__pic-img(src="img/bosh-bfg-9000.jpg" height="164" width="184" alt="Перфоратор BOSCH BFG 9000")
-                h3.product__title Перфоратор BOSCH BFG 9000
-                a.btn.btn_red.btn_text-bold(htef="#") 25500 р.
-                  span.old-price 32500 р.
+              div.product__picture
+                img.product__imgage(src="img/bosh-bfg-9000.jpg" height="164" width="184" alt="Перфоратор BOSCH BFG 9000")
+              h3.product__title Перфоратор BOSCH BFG 9000
+              span.product__price 25500 р.
+                span.old-price 32500 р.
+              div.product__buy
+                a.btn.btn_green(href="#") Купить
+                a.btn.btn_border-green(href="#") В закладки
             div.product
-              div.product__pic
-                img.product__pic-img(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
-                h3.product__title Перфоратор BOSCH BFG 3000
-                a.btn.btn_red.btn_text-bold(htef="#") 15500 р.
-                  span.old-price 25500 р.
+              div.product__picture
+                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
+              h3.product__title Перфоратор BOSCH BFG 3000
+              span.product__price 15500 р.
+                span.old-price 25500 р.
+              div.product__buy
+                a.btn.btn_green(href="#") Купить
+                a.btn.btn_border-green(href="#") В закладки
             div.product
-              div.product__pic
-                img.product__pic-img(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
-                h3.product__title Перфоратор BOSCH BFG 6000
-                a.btn.btn_red.btn_text-bold(htef="#") 25500 р.
-                  span.old-price 30500 р.
+              div.product__picture
+                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
+              h3.product__title Перфоратор BOSCH BFG 6000
+              span.product__price 25500 р.
+                span.old-price 30500 р.
+              div.product__buy
+                a.btn.btn_green(href="#") Купить
+                a.btn.btn_border-green(href="#") В закладки
             div.product
-              div.product__pic
-                img.product__pic-img(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
-                h3.product__title Перфоратор BOSCH BFG 2000
-                a.btn.btn_red.btn_text-bold(htef="#") 12500 р.
+              div.product__picture.product__picture_new
+                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
+              h3.product__title Перфоратор BOSCH BFG 2000
+              span.product__price 12500 р.
+              div.product__buy
+                a.btn.btn_green(href="#") Купить
+                a.btn.btn_border-green(href="#") В закладки
           div.popular-brands
-            h2.popular__title Популярные производители:
+            h2.content__title Популярные производители:
               a.btn.btn_red.btn_big(href="#") Все производители
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-bosch.jpg" height="37" width="126" alt="Брэнд Bosh")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-bosch.jpg" height="37" width="126" alt="Брэнд Bosh")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-makita.jpg" height="40" width="123" alt="Брэнд Makita")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-makita.jpg" height="40" width="123" alt="Брэнд Makita")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-dewalt.jpg" height="44" width="146" alt="Брэнд DeWALT")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-dewalt.jpg" height="44" width="146" alt="Брэнд DeWALT")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-interscol.jpg" height="200" width="88" alt="Брэнд Интерскол")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-interscol.jpg" height="200" width="88" alt="Брэнд Интерскол")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-hitachi.jpg" height="31" width="169" alt="Брэнд Hitachi")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-hitachi.jpg" height="31" width="169" alt="Брэнд Hitachi")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-lg.jpg" height="73" width="121" alt="Брэнд LG")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-lg.jpg" height="73" width="121" alt="Брэнд LG")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-aeg.jpg" height="96" width="151" alt="Брэнд AEG")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-aeg.jpg" height="96" width="151" alt="Брэнд AEG")
             div.brand
-              div.brand__pic
-                img.brand__pic-img(src="img/brand-metabo.jpg" height="69" width="204" alt="Брэнд Metabo")
+              a.brand__link(href="#")
+                div.brand__picture
+                  img.brand__imgage(src="img/brand-metabo.jpg" height="69" width="204" alt="Брэнд Metabo")
       div.services
         div.container
           h2.services__title Сервисы
@@ -190,8 +210,8 @@ html(lang="ru")
             p.about__text.
              Вы можете забрать товар сами, заехав в наш офис:
             a.map-link(href="#")
-              div.map-link__pic
-                img.map-link__pic-img(src="img/about-map.jpg" height="158" width="300" alt="Карта")
+              div.map-link__picture
+                img.map-link__imgage(src="img/about-map.jpg" height="158" width="300" alt="Карта")
             a.btn.btn_red(href="#")
     footer.footer-main
       div.footer-main__top
