@@ -12,10 +12,12 @@ html(lang="ru")
     header.header-main
       div.header-main__top
         div.container
-          div.logo Техномарт
+          div.logo
+            a.logo__link Техномарт
           div.search
             form(action="https://echo.htmlacademy.ru" method="get")
               input.search__input(type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30")
+              span.icon-search
           div.bookmarks
             a.bookmarks__link(href="#") Закладки:
               span.bookmarks__result 0
@@ -31,22 +33,22 @@ html(lang="ru")
         div.user-block
           a.user-block__link.user-block__link_sign-in(href="#") Войти
           a.user-block__link.user-block__link_sign-up(href="#") Регистрация
-      nav.menu.container
-        ul.menu__list
-          li.menu__item
-            a.menu__link(href="#") Главная
-          li.menu__item
-            a.menu__link(href="#") Компания
-          li.menu__item
-            a.menu__link(href="catalog.html") Каталог
-          li.menu__item
-            a.menu__link(href="#") Новости
-          li.menu__item
-            a.menu__link(href="#") Спецпредложения
-          li.menu__item
-            a.menu__link(href="#") Доставка
-          li.menu__item
-            a.menu__link(href="#") Контакты
+        nav.menu.container
+          ul.menu__list
+            li.menu__item
+              a.menu__link(href="#") Главная
+            li.menu__item
+              a.menu__link(href="#") Компания
+            li.menu__item
+              a.menu__link(href="catalog.html") Каталог
+            li.menu__item
+              a.menu__link(href="#") Новости
+            li.menu__item
+              a.menu__link(href="#") Спецпредложения
+            li.menu__item
+              a.menu__link(href="#") Доставка
+            li.menu__item
+              a.menu__link(href="#") Контакты
     main.content
       div.container
         div.promo
@@ -222,14 +224,14 @@ html(lang="ru")
                   a.footer-nav-bottom__link Спецпредложения
       div.footer-main__bottom
         div.container
-          div.copyright &copy; 2010–2016 Компания «Техномарт» Все права защищены
+          div.copyright &copy; 2010&ndash;2016 Компания &laquo;Техномарт&raquo; Все права защищены
           div.socials
             a.socials__link.socials__link_vk(href="#") Вконтакте
             a.socials__link.socials__link_fb(href="#") Фейсбук
-            a.socials__link.socials__link_tw(href="#") Твитер
+            a.socials__link.socials__link_in(href="#") Инстаграм
           div.email Обратная связь:
             a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
-          div.design Разработано -
+          div.design Разработано &mdash;
             a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
     div.modal-content
       button.modal-content__close(type="button" title="Закрыть") Закрыть
@@ -247,6 +249,14 @@ html(lang="ru")
     div.modal-map
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       div.map-container#map
+    div.modal-bag
+      button.modal-content__close(type="button" title="Закрыть") Закрыть
+      div.modal-bag__title Товар добавлен в корзину
+        span.modal-bag__decoration
+      div.modal-bag__bottom
+        a.btn.btn_red.btn_big(href="#") Оформить заказ
+        a.btn.btn_white.btn_big(href="#") Продолжить покупки
+
     //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
     script(src="js/main.js")
 

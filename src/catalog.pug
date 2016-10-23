@@ -12,7 +12,7 @@ html(lang="ru")
     header.header-main
       div.header-main__top
         div.container
-          div.logo
+          div.logo.logo_inner
             a.logo__link(href="index.html") Техномарт
           div.search
             form(action="https://echo.htmlacademy.ru" method="get")
@@ -31,27 +31,29 @@ html(lang="ru")
           p.contacts__text г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         div.user-block
           div.user-block__active
-            a.user-block__link-name(href="#")
-              output.user-name-current Равшан Джамшутович
-              a.user-block__link-sign-out Выйти
+            div.user
+              a.user-block__link-name(href="#")
+                span.user-name-current Равшан Джамшутович
+                a.user-block__link-sign-out Выйти
             a.user-block__link-order(href="#") Мои заказы
             a.user-block__link-login(href="#") Личный кабинет
-      nav.menu.container
-        ul.menu__list
-          li.menu__item
-            a.menu__link(href="#") Главная
-          li.menu__item
-            a.menu__link(href="#") Компания
-          li.menu__item
-            a.menu__link(href="#") Каталог
-          li.menu__item
-            a.menu__link(href="#") Новости
-          li.menu__item
-            a.menu__link(href="#") Спецпредложения
-          li.menu__item
-            a.menu__link(href="#") Доставка
-          li.menu__item
-            a.menu__link(href="#") Контакты
+        nav.menu
+          div.container
+            ul.menu__list
+              li.menu__item
+                a.menu__link(href="index.html") Главная
+              li.menu__item
+                a.menu__link(href="#") Компания
+              li.menu__item
+                a.menu__link(href="#") Каталог
+              li.menu__item
+                a.menu__link(href="#") Новости
+              li.menu__item
+                a.menu__link(href="#") Спецпредложения
+              li.menu__item
+                a.menu__link(href="#") Доставка
+              li.menu__item
+                a.menu__link(href="#") Контакты
     main.catalog
       div.container
         ul.breadcrumbs
@@ -240,11 +242,18 @@ html(lang="ru")
           div.socials
             a.socials__link.socials__link_vk(href="#") Вконтакте
             a.socials__link.socials__link_fb(href="#") Фейсбук
-            a.socials__link.socials__link_tw(href="#") Твитер
+            a.socials__link.socials__link_in(href="#") Инстаграм
           div.email Обратная связь:
             a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
           div.design Разработано -
             a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
+    div.modal-bag
+      button.modal-content__close(type="button" title="Закрыть") Закрыть
+      div.modal-bag__title Товар добавлен в корзину
+        span.modal-bag__decoration
+      div.modal-bag__bottom
+        a.btn.btn_red.btn_big(href="#") Оформить заказ
+        a.btn.btn_white.btn_big(href="#") Продолжить покупки
     //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
     script(src="js/main.js")
 

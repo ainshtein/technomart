@@ -13,7 +13,7 @@
     <header class="header-main">
       <div class="header-main__top">
         <div class="container">
-          <div class="logo"><a class="logo__link" href="index.html">Техномарт</a></div>
+          <div class="logo logo_inner"><a class="logo__link" href="index.html">Техномарт</a></div>
           <div class="search">
             <form action="https://echo.htmlacademy.ru" method="get">
               <input class="search__input" type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30">
@@ -29,21 +29,24 @@
           <p class="contacts__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
-          <div class="user-block__active"><a class="user-block__link-name" href="#">
-              <output class="user-name-current">Равшан Джамшутович</output><a class="user-block__link-sign-out">Выйти</a></a><a class="user-block__link-order" href="#">Мои заказы</a><a class="user-block__link-login" href="#">Личный кабинет</a></div>
+          <div class="user-block__active">
+            <div class="user"><a class="user-block__link-name" href="#"><span class="user-name-current">Равшан Джамшутович</span><a class="user-block__link-sign-out">Выйти</a></a></div><a class="user-block__link-order" href="#">Мои заказы</a><a class="user-block__link-login" href="#">Личный кабинет</a>
+          </div>
         </div>
+        <nav class="menu">
+          <div class="container">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Компания</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="menu container">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Компания</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="catalog">
       <div class="container">
@@ -212,12 +215,17 @@
       <div class="footer-main__bottom">
         <div class="container">
           <div class="copyright">&copy; 2010–2016 Компания «Техномарт» Все права защищены</div>
-          <div class="socials"><a class="socials__link socials__link_vk" href="#">Вконтакте</a><a class="socials__link socials__link_fb" href="#">Фейсбук</a><a class="socials__link socials__link_tw" href="#">Твитер</a></div>
+          <div class="socials"><a class="socials__link socials__link_vk" href="#">Вконтакте</a><a class="socials__link socials__link_fb" href="#">Фейсбук</a><a class="socials__link socials__link_in" href="#">Инстаграм</a></div>
           <div class="email">Обратная связь:<a class="email__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
           <div class="design">Разработано -<a class="design__link" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a></div>
         </div>
       </div>
     </footer>
+    <div class="modal-bag">
+      <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal-bag__title">Товар добавлен в корзину<span class="modal-bag__decoration"></span></div>
+      <div class="modal-bag__bottom"><a class="btn btn_red btn_big" href="#">Оформить заказ</a><a class="btn btn_white btn_big" href="#">Продолжить покупки</a></div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

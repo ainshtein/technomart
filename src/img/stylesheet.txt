@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite--icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -32px -5px;
+}
+
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -56px -5px;
+}
+
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -89px -5px;
+}
+
+.sprite--icon-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -126px -5px;
+}
+
+.sprite--icon-in {
+    width: 17px;
+    height: 17px;
+    background-position: -146px -5px;
+}
+
+.sprite--icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -173px -5px;
+}
+
+.sprite--icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -203px -5px;
+}
+
+.sprite--icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -232px -5px;
+}
+
+.sprite--icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -259px -5px;
+}
+
+.sprite--icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -286px -5px;
+}
+
+.sprite--icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -316px -5px;
+}

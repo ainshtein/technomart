@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'cuprumregular';
+    src: url('../../fonts/cuprum-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/cuprum-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cuprumbold';
+    src: url('../../fonts/cuprum-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/cuprum-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cuprumitalic';
+    src: url('../../fonts/cuprum-italic-webfont.woff2') format('woff2'),
+         url('../../fonts/cuprum-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../../fonts/pts55f-webfont.woff2') format('woff2'),
+         url('../../fonts/pts55f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../../fonts/pts75f-webfont.woff2') format('woff2'),
+         url('../../fonts/pts75f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin cuprum($style: regular) {
+    @if $style == regular {
+      font-family: 'cuprumregular', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+
+    @if $style == bold {
+      font-family: 'cuprumbold', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans','sans-serif';
+    }
+
+    @if $style == italic {
+      font-family: 'cuprumitalic', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+}
+
+@mixin ptsans($style: regular) {
+    @if $style == regular {
+      font-family: 'pt_sansregular', 'Arial', 'Helvetica',
+     'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+
+    @if $style == bold {
+      font-family: 'pt_sansbold', 'Arial', 'Helvetica',
+      'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

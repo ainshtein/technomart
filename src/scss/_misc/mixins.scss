@@ -1,0 +1,17 @@
+@mixin color($bg, $color: red) {
+  background: $bg;
+  color: $color;
+}
+
+%clearfix {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin inlineblock($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}

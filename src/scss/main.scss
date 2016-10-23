@@ -1,0 +1,23 @@
+// ----- vars ----- //
+$base: #f1f5f7;
+$red:  #ee3643;
+$red-hvr:  #ca2c37;
+$red-dwn:  #ba2732;
+$green:  #63a63e;
+$green-hvr:  #5fbb2d;
+$green-dwn:  #518534;
+$dark-blue:  #32425c;
+
+
+// ----- layout ----- //
+@import "_misc/mixins";
+@import "../../node_modules/normalize.css/normalize";
+@import "_misc/fonts";
+@import "_misc/adjustment";
+
+// ----- styles ----- //
+@import "partials/header";
+@import "partials/main-index";
+@import "partials/footer";
+@import "partials/main-catalog";
+@import "partials/modal"
