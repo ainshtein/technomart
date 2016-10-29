@@ -88,10 +88,16 @@
 // ---------- footer-main__bottom ----------- //
 .footer-main__bottom {
   background: #293449;
+  padding: 35px 0 30px;
 }
 .copyright {
   float: left;
   width: 240px;
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  text-transform: none;
+  text-align: left;
 }
 .socials {
   float: left;
@@ -99,14 +105,77 @@
   margin-left: 140px;
   font-size: 0;
 }
-.email {
+.socials__link {
+  position: relative;
+  @include inlineblock;
+  width: 41px;
+  height: 41px;
+  text-decoration: none;
+  background-color: #212a3a;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+
+      &:hover,
+      &:active {
+        background-color: $red;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../../img/sprite.png") 0 0 no-repeat;
+      }
+}
+.socials__link_vk::before {
+  width: 20px;
+  height: 12px;
+  background-position: -316px -5px;
+}
+.socials__link_fb::before {
+  width: 10px;
+  height: 18px;
+  background-position: -126px -5px;
+}
+.socials__link_in::before {
+  width: 17px;
+  height: 17px;
+  background-position: -146px -5px;
+}
+.email,
+.design {
   float: left;
   width: 140px;
+  font: inherit;
+  font-size: 16px;
+  text-transform: none;
+  color: #ffffff;
+}
+.email {
   margin-right: 20px;
   text-align: left;
 }
 .design {
-  float: left;
-  width: 140px;
   text-align: center;
+}
+.email__link,
+.design__link {
+  display: block;
+  font: inherit;
+  font-size: inherit;
+  color: #ffd180;
+  text-decoration: none;
+  transition: text-decoration 0.3s, color 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $red;
+      text-decoration: none;
+    }
 }

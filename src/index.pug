@@ -53,15 +53,16 @@ html(lang="ru")
       div.container
         div.promo
           div.promo__top
-            div.promo__card.promo__card_new
+            div.promo__card.promo__card_materials
+              div.flag.flag_new новинка
               div.promo__content
                 h2.promo__title Материалы
                 a.btn(href="#") На любой вкус
-            div.promo__card
+            div.promo__card.promo__card_tools
               div.promo__content
                 h2.promo__title Инструмент
                 a.btn(href="#") На все случаи
-            div.promo__card
+            div.promo__card.promo__card_tech
               div.promo__content
                 h2.promo__title Техника
                 a.btn(href="#") Для стройки
@@ -79,11 +80,11 @@ html(lang="ru")
                     p.slide__text Соседям на радость
                   a.btn.btn_red.btn_big(href="#") Открыть каталог
             div.promo__bottom_right
-              div.promo__card
+              div.promo__card.promo__card_sale
                 div.promo__content
                   h2.promo__title Скидки 50%
                   a.btn(href="#") На 350 товаров
-              div.promo__card
+              div.promo__card.promo__card_delivery
                 div.promo__content
                   h2.promo__title Доставка
                   a.btn(href="#") Бесплатно
@@ -92,58 +93,61 @@ html(lang="ru")
             a.btn.btn_red.btn_big(href="#") Все популярные товары
           div.product
             div.product__picture
-              img.product__image(src="img/bosh-bfg-9000.jpg" height="164" width="184" alt="Перфоратор BOSCH BFG 9000")
+              img.product__image(src="img/bosh-bfg-9000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 9000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
             h3.product__title Перфоратор BOSCH BFG 9000
-            span.product__price 25500 р.
-              span.old-price 32500 р.
+            div.old-price 32500 р.
+            div.product__price 25500 р.
           div.product
             div.product__picture
-              img.product__image(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
+              img.product__image(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
             h3.product__title Перфоратор BOSCH BFG 3000
-            span.product__price 15500 р.
-              span.old-price 25500 р.
+            div.old-price 25500 р.
+            div.product__price 15500 р.
           div.product
             div.product__picture
-              img.product__image(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
+              img.product__image(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
             h3.product__title Перфоратор BOSCH BFG 6000
-            span.product__price 25500 р.
-              span.old-price 30500 р.
-          div.product.product_new
+            div.old-price 30500 р.
+            div.product__price 25500 р.
+          div.product
+            div.flag.flag_new новинка
             div.product__picture
-              img.product__image(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
+              img.product__image(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
               div.product__buy
                 a.btn.btn_green(href="#") Купить
                 a.btn.btn_border-green(href="#") В закладки
             h3.product__title Перфоратор BOSCH BFG 2000
-            span.product__price 12500 р.
+            div.old-price
+            div.product__price 12500 р.
         div.popular-brands
           h2.content__title Популярные производители:
             a.btn.btn_red.btn_big(href="#") Все производители
-          a.brand(href="#")
-            img.brand__image(src="img/brand-bosch.png" height="37" width="126" alt="Брэнд Bosh")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-makita.png" height="40" width="123" alt="Брэнд Makita")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-dewalt.png" height="44" width="146" alt="Брэнд DeWALT")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-interscol.png" height="200" width="88" alt="Брэнд Интерскол")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-hitachi.png" height="31" width="169" alt="Брэнд Hitachi")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-lg.png" height="73" width="121" alt="Брэнд LG")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-aeg.png" height="96" width="151" alt="Брэнд AEG")
-          a.brand(href="#")
-            img.brand__image(src="img/brand-metabo.png" height="69" width="204" alt="Брэнд Metabo")
+          div.row
+            a.brand(href="#")
+              img.brand__image(src="img/brand-bosch.png" height="37" width="126" alt="Брэнд Bosh")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-makita.png" height="40" width="123" alt="Брэнд Makita")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-dewalt.png" height="44" width="146" alt="Брэнд DeWALT")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-interscol.png" height="88" width="200" alt="Брэнд Интерскол")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-hitachi.png" height="31" width="169" alt="Брэнд Hitachi")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-lg.png" height="73" width="121" alt="Брэнд LG")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-aeg.png" height="96" width="151" alt="Брэнд AEG")
+            a.brand(href="#")
+              img.brand__image(src="img/brand-metabo.png" height="69" width="204" alt="Брэнд Metabo")
       div.services
         div.container
           h2.services__title Сервисы
@@ -160,19 +164,19 @@ html(lang="ru")
             div.tab.tab_first
               div.tab__content
                 h3.tab__title Доставка
-                p.tab__taxt.
+                p.tab__text.
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
             div.tab.tab_second
               div.tab__content
                 h3.tab__title Гарантия
-                p.tab__taxt.
+                p.tab__text.
                     Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
             div.tab.tab_third
               div.tab__content
                 h3.tab__title Кредит
-                p.tab__taxt.
+                p.tab__text.
                     Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                a.btn.btn_red.btn_big(href="#")
+                a.btn.btn_red.btn_big(href="#") Отправить заявку
       div.about
         div.container
           div.about__left
@@ -190,9 +194,9 @@ html(lang="ru")
             h2.about__title Контакты
             p.about__text.
              Вы можете забрать товар сами, заехав в наш офис:
-            a.map-link(href="#")
+            a.map-link#map-link(href="#")
               img.map-link__image(src="img/about-map.jpg" height="158" width="300" alt="Карта")
-            a.btn.btn_red(href="#")
+            a.btn.btn_red.btn_big(href="#") Заблудились? Напишите нам!
     footer.footer-main
       div.footer-main__top
         div.container
@@ -236,24 +240,28 @@ html(lang="ru")
     div.modal-content
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       form.modal-content__form(action="https://echo.htmlacademy.ru" method="post")
-        div.modal-content__top
-          div.modal-content__left
-            label.modal-content__label(for="user-name-field") Ваше имя:
-            input.modal-content__input(type="text" name="user-name" id="user-name-field" placeholder="Представьтесь, пожалуйста" maxlength="50")
-          div.modal-content__right
-            label.modal-content__label(for="user-name-field") Ваш e-mail:
-            input.modal-content__input(type="text" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30")
-        label.modal-content__label(for="email-text-field") Текст письма:
-        textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300")
-        button.btn.btn_red(type="submit") Отправить
+        div.modal-content__input-block
+          div.modal-content__top
+            div.modal-content__left
+              label.modal-content__label(for="user-name-field") Ваше имя:
+              input.modal-content__input(type="text" name="user-name" id="user-name-field" placeholder="Представьтесь, пожалуйста" maxlength="50")
+            div.modal-content__right
+              label.modal-content__label(for="user-name-field") Ваш e-mail:
+              input.modal-content__input(type="text" name="user-email" id="user-email-field" placeholder="Для отправки ответа" maxlength="30")
+          label.modal-content__label(for="email-text-field") Текст письма:
+          textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300")
+        div.modal-content__btn-block
+          button.btn.btn_red.btn_big(type="submit") Отправить
     div.modal-map
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       div.map-container#map
+        button.modal-content__close(type="button" title="Закрыть") Закрыть
     div.modal-bag
       button.modal-content__close(type="button" title="Закрыть") Закрыть
-      div.modal-bag__title Товар добавлен в корзину
-        span.modal-bag__decoration
-      div.modal-bag__bottom
+      div.modal-bag__text-block
+        div.modal-bag__title Товар добавлен в корзину!
+          span.modal-bag__decoration
+      div.modal-bag__btn-block
         a.btn.btn_red.btn_big(href="#") Оформить заказ
         a.btn.btn_white.btn_big(href="#") Продолжить покупки
 
