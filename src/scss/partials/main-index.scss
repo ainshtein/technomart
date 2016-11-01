@@ -18,7 +18,7 @@
       }
 }
 .promo__card_materials {
-  background: #f6b22d url("../../img/bg-promo-materials.png") 210px 40px no-repeat;
+  background: #f6b22d url("../../img/bg-promo-materials.png") 213px 30px no-repeat;
 }
 .promo__card_materials .flag {
   position: absolute;
@@ -34,16 +34,17 @@
   background: url("../../img/flag-new.png") 0 0 no-repeat;
 }
 .promo__card_tools {
-  background: #4aafde url("../../img/bg-promo-tools.png") 210px 40px no-repeat;
+  background: #4aafde url("../../img/bg-promo-tools.png") 197px 32px no-repeat;
 }
 .promo__card_tech {
-  background: #cc79d1 url("../../img/bg-promo-tech.png") 210px 40px no-repeat;
+  background: #cc79d1 url("../../img/bg-promo-tech.png") 191px 30px no-repeat;
 }
 .promo__title {
   margin: 0;
   @include cuprum(bold);
   font-size: 24px;
   line-height: 30px;
+  text-transform: none;
   margin-bottom: 10px;
 }
 .promo__content .btn {
@@ -86,12 +87,12 @@
 .slide {
   width: 100%;
   height: 100%;
-  padding: 25px 20px 20px;
+  padding: 25px 25px 20px;
 }
 .slide__content {
   width: 300px;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 121px;
 }
 .slide__title {
   @include cuprum(bold);
@@ -100,7 +101,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .slide__text {
   @include ptsans;
@@ -108,6 +109,7 @@
   line-height: 24px;
   text-transform: none;
   color: #ffffff;
+  margin: 0;
 }
 .btn_red {
   color: #ffffff;
@@ -125,7 +127,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 45px 13px;
+  padding: 11px 48px 9px;
 }
 .slide_first {
   background: #544738 url("../../img/bg-slider-perf.jpg") 0 0 no-repeat;
@@ -136,11 +138,11 @@
   display: none;
 }
 .promo__card_sale {
-  background: #85d179 url("../../img/bg-promo-sale.png") 210px 40px no-repeat;
+  background: #85d179 url("../../img/bg-promo-sale.png") 196px 25px no-repeat;
   margin: 0 0 20px 0;
 }
 .promo__card_delivery {
-  background: #f6b22d url("../../img/bg-promo-delivery.png") 210px 40px no-repeat;
+  background: #f6b22d url("../../img/bg-promo-delivery.png") 191px 31px no-repeat;
   margin: 0;
 }
 .content__title {
@@ -150,18 +152,17 @@
   line-height: 30px;
   color: $dark-blue;
   background-color: #f7f3ec;
-  padding: 33px 25px 35px 30px;
+  padding: 29px 25px 28px 30px;
   margin: 0 0 20px;
 }
 .content__title .btn_big {
   position: absolute;
-  top: 25px;
-  right: 24px;
-  padding: 14px 56px 13px;
+  top: 23px;
+  right: 22px;
+  padding: 11px 55px 9px;
 }
 .popular-products {
   font-size: 0;
-  margin-bottom: 20px;
 }
 .row {
   margin-right: -20px;
@@ -296,7 +297,7 @@
   border-radius: 3px;
   padding: 10px 30px;
   margin: 10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
       &:after {
         content: "";
@@ -318,7 +319,10 @@
 }
 .popular-brands {
   font-size: 0;
-  margin-bottom: 85px;
+  margin-bottom: 70px;
+}
+.popular-brands .btn {
+  padding: 11px 70px 9px;
 }
 .brand {
   position: relative;
@@ -358,7 +362,7 @@
   font: inherit;
   font-size: 30px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 }
 .services__text {
   width: 400px;
@@ -404,7 +408,7 @@
   line-height: 30px;
   text-transform: none;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
-  padding: 20px 22px 22px;
+  padding: 7px 22px 22px;
   cursor: pointer;
   transition: background-color 0.3s;
 
@@ -442,7 +446,7 @@
   font: inherit;
   font-size: 36px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 .tab__text {
   @include ptsans;
@@ -473,7 +477,7 @@
 .about {
   background-color: #ffffff;
   color: #000000;
-  padding: 80px 0 85px;
+  padding: 72px 0 85px;
 }
 .about .container {
   @extend %clearfix;
@@ -491,7 +495,7 @@
 .about__title {
   font-size: 30px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .about__text {
   @include ptsans;
@@ -499,7 +503,7 @@
   line-height: 24px;
   text-transform: none;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .about__list {
   padding: 0;
@@ -509,7 +513,7 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 .about__item {
   position: relative;
@@ -535,7 +539,7 @@
   overflow: hidden;
   width: 300px;
   height: 158px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 .map-link__image {
   display: block;
