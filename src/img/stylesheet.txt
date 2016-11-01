@@ -34,44 +34,56 @@
     background-position: -126px -5px;
 }
 
+.sprite--icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -146px -5px;
+}
+
 .sprite--icon-in {
     width: 17px;
     height: 17px;
-    background-position: -146px -5px;
+    background-position: -171px -5px;
 }
 
 .sprite--icon-login {
     width: 20px;
     height: 17px;
-    background-position: -173px -5px;
+    background-position: -198px -5px;
 }
 
 .sprite--icon-phone {
     width: 19px;
     height: 19px;
-    background-position: -203px -5px;
+    background-position: -228px -5px;
+}
+
+.sprite--icon-right {
+    width: 8px;
+    height: 12px;
+    background-position: -257px -5px;
 }
 
 .sprite--icon-search {
     width: 17px;
     height: 17px;
-    background-position: -232px -5px;
+    background-position: -275px -5px;
 }
 
 .sprite--icon-search-focus {
     width: 17px;
     height: 17px;
-    background-position: -259px -5px;
+    background-position: -302px -5px;
 }
 
 .sprite--icon-user {
     width: 20px;
     height: 18px;
-    background-position: -286px -5px;
+    background-position: -329px -5px;
 }
 
 .sprite--icon-vk {
     width: 20px;
     height: 12px;
-    background-position: -316px -5px;
+    background-position: -359px -5px;
 }

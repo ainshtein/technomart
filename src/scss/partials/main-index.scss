@@ -163,6 +163,9 @@
   font-size: 0;
   margin-bottom: 20px;
 }
+.row {
+  margin-right: -20px;
+}
 .product {
   position: relative;
   @include inlineblock;
@@ -174,10 +177,6 @@
   margin: 0 20px 20px 0;
   text-align: center;
   transition: box-shadow 0.3s;
-
-      &:nth-child(5n) {
-        margin-right: 0;
-      }
 
       &:hover {
         box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
@@ -320,9 +319,6 @@
 .popular-brands {
   font-size: 0;
   margin-bottom: 85px;
-}
-.row {
-  margin-right: -20px;
 }
 .brand {
   position: relative;

@@ -17,12 +17,13 @@ html(lang="ru")
           div.search
             form(action="https://echo.htmlacademy.ru" method="get")
               input.search__input(type="text" name="search-text" id="search-text-field" placeholder="Поиск:" maxlength="30")
+              span.icon-search
           div.bookmarks
             a.bookmarks__link(href="#") Закладки:
               span.bookmarks__result 0
           div.bag.bag_active
             a.bag__link(href="#") Корзина:
-              span.bag__result 0
+              span.bag__result 10
           a.btn.btn_green(href="#") Оформить заказ
       div.header-main__content.container
         h2.header-main__title Интернет-магазин строительных материалов и инструментов для ремонта
@@ -58,13 +59,13 @@ html(lang="ru")
       div.container
         ul.breadcrumbs
           li.breadcrumbs__item
-            a.breadcrumbs__link(href="#") Домой
+            a.breadcrumbs__link.breadcrumbs__link_home(href="#") Домой
           li.breadcrumbs__item
             a.breadcrumbs__link(href="#") Каталог
           li.breadcrumbs__item
             a.breadcrumbs__link(href="#") Инструмент
           li.breadcrumbs__item
-            a.breadcrumbs__link(href="#") Перфораторы
+            a.breadcrumbs__link.breadcrumbs__link_active Перфораторы
         h2.content__title Перфораторы
         aside.catalog__filter
           div.filter
@@ -80,133 +81,137 @@ html(lang="ru")
                     div.range__toggle.range__toggle_max Переключатель максимум
                   div.range__fields
                     label.range__label.range__label_left(for="price-min-field") от
-                      input.range__input(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
+                    input.range__input.range__input_left(type="text" name="price-min" id="price-min-field" value="0" maxlength="9")
                     label.range__label.range__label_right(for="price-max-field") до
-                      input.range__input(type="text" name="price-max" id="price-max-field" value="30000" maxlength="9")
-              fieldset.filter__group
+                    input.range__input.range__input_right(type="text" name="price-max" id="price-max-field" value="30000" maxlength="9")
+              fieldset.filter__group.producer
                 legend.filter__title Производители
                 input.filter__checkbox(type="checkbox" name="bosch" id="bosch-field" checked)
                 label.filter__label(for="bosch-field") Bosh
                 input.filter__checkbox(type="checkbox" name="interskol" id="interskol-field")
                 label.filter__label(for="interskol-field") Интерскол
-                input.filter__checkbox(type="checkbox" name="makita" id="makita-field" checked)
+                input.filter__checkbox(type="checkbox" name="makita" id="makita-field")
                 label.filter__label(for="makita-field") Makita
                 input.filter__checkbox(type="checkbox" name="dewalt" id="dewalt-field" checked)
                 label.filter__label(for="dewalt-field") Dewalt
-                input.filter__checkbox(type="checkbox" name="hitachi" id="hitachi-field" checked)
-                label.filter__label(for="hitachi-field") Dewalt
-              fieldset.filter__group
+                input.filter__checkbox(type="checkbox" name="hitachi" id="hitachi-field")
+                label.filter__label(for="hitachi-field") Hitachi
+              fieldset.filter__group.power
                 legend.filter__title Питание:
-                input.filter__radio(type="radio" name="puncher" id="puncher-battery-field" value="battery")
+                input.filter__radio(type="radio" name="power" id="puncher-battery-field" value="battery" checked)
                 label.filter__label(for="puncher-battery-field") Аккумуляторные
-                input.filter__radio(type="radio" name="puncher" id="puncher-battery-field" value="networking")
-                label.filter__label(for="puncher-battery-field") Сетевые
+                input.filter__radio(type="radio" name="power" id="puncher-net-field" value="networking")
+                label.filter__label(for="puncher-net-field") Сетевые
               button.btn.btn_submit(type="submit") Показать
         div.catalog__wrapper
           div.catalog__sorting
             ul.sorting
               li.sorting__item Сортировка:
               li.sorting__item
-                a.sorting__link.sorting__link_active(href="#") По цене
+                a.sorting__link.sorting__link_active По цене
               li.sorting__item
                 a.sorting__link(href="#") По типу
               li.sorting__item
                 a.sorting__link(href="#") По функционалу
               li.sorting__item
-                a.sorting__link.sorting__link_down.sorting__link_active(href="#") сортировать по убыванию
-                a.sorting__link.sorting__link_up(href="#") сортировать по возрастанию
+                a.sorting__link-arrow.sorting__link_down.sorting__link-arrow_active(href="#") сортировать по убыванию
+                a.sorting__link-arrow.sorting__link_up(href="#") сортировать по возрастанию
           div.catalog__content
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
+                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
-              span.product__price 15500 р.
-                span.old-price 25500 р.
+              div.old-price 25500 р.
+              div.product__price 15500 р.
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
+                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
-              span.product__price 25500 р.
-                span.old-price 30500 р.
+              div.old-price 30500 р.
+              div.product__price 25500 р.
             div.product
               div.product__picture.product__picture_new
-                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
+                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
-              span.product__price 12500 р.
+              div.old-price
+              div.product__price 12500 р.
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
+                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
-              span.product__price 15500 р.
-                span.old-price 25500 р.
+              div.old-price 25500 р.
+              div.product__price 15500 р.
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
+                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
-              span.product__price 25500 р.
-                span.old-price 30500 р.
+              div.old-price 30500 р.
+              div.product__price 25500 р.
             div.product
               div.product__picture.product__picture_new
-                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
+                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
-              span.product__price 12500 р.
+              div.old-price
+              div.product__price 12500 р.
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 3000")
+                img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
-              span.product__price 15500 р.
-                span.old-price 25500 р.
+              div.old-price 25500 р.
+              div.product__price 15500 р.
             div.product
               div.product__picture
-                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="128" width="144" alt="Перфоратор BOSCH BFG 6000")
+                img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
-              span.product__price 25500 р.
-                span.old-price 30500 р.
+              div.old-price 30500 р.
+              div.product__price 25500 р.
             div.product
               div.product__picture.product__picture_new
-                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="112" width="127" alt="Перфоратор BOSCH BFG 2000")
+                img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
                   a.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
-              span.product__price 12500 р.
+              div.old-price
+              div.product__price 12500 р.
             ul.pagination
               li.pagination__item
                 a.pagination__link.pagination__link_current 1
               li.pagination__item
-                a.pagination__link 2
+                a.pagination__link(href="#") 2
               li.pagination__item
-                a.pagination__link 3
+                a.pagination__link(href="#") 3
               li.pagination__item
-                a.pagination__link.pagination__link_last Следующая
+                a.pagination__link.pagination__link_last(href="#") Следующая
       article.catalog__description
-        h1.catalog__description-title ПАРА СЛОВ О ПЕРФОРАТОРАХ
-        p.catalog__description-text.
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и невматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        div.container
+          h1.catalog__description-title ПАРА СЛОВ О ПЕРФОРАТОРАХ
+          p.catalog__description-text.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и невматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
     footer.footer-main
       div.footer-main__top
         div.container
