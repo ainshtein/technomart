@@ -17,6 +17,10 @@ $filter-color: #f7f3ec;
 @import "_misc/fonts";
 @import "_misc/adjustment";
 
+// ----- Slider ----- //
+@import "../../node_modules/owlcarousel/owl-carousel/owl.carousel";
+@import "../../node_modules/owlcarousel/owl-carousel/owl.theme";
+
 // ----- styles ----- //
 @import "partials/header";
 @import "partials/main-index";

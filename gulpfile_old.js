@@ -15,7 +15,6 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     // wiredep = require('gulp-wiredep'),
     useref = require('gulp-useref'),
-    include = require('gulp-include'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload;
 
@@ -61,7 +60,7 @@ var config = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(plumber({  //Проверим на ошибки
+        .pipe(plumber({
             errorHandler: notify.onError(function(err){
                 return {
                     title: "Html",
@@ -73,8 +72,6 @@ gulp.task('html:build', function () {
         //     directory: 'bower_components/'
         // }))
         .pipe(pug({pretty: true}))//Скомпилируем
-        .pipe(include()) //Инклудим
-            .on('error', console.log)
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .on('end', function() { //запускаем useref по завершению html
             useref();
@@ -84,17 +81,7 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(plumber({  //Проверим на ошибки
-            errorHandler: notify.onError(function(err){
-                return {
-                    title: "JavaScript",
-                    message: err.message
-                }
-            })
-        }))
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
-        .pipe(include()) //Инклудим
-            .on('error', console.log)
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write('.')) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
@@ -106,7 +93,7 @@ gulp.task('css:build', function () {
         .pipe(plumber({
             errorHandler: notify.onError(function(err){
                 return {
-                    title: "CSS",
+                    title: "Css",
                     message: err.message
                 }
             })

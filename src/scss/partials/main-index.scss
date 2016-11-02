@@ -79,11 +79,96 @@
   font-size: 0;
 }
 .owl-carousel {
+  position: relative;
   width: 620px;
   height: 266px;
   background-color: #544738;
   color: #ffffff;
 }
+.owl-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translareX(-50%);
+}
+.owl-theme .owl-controls .owl-buttons {
+  position: absolute;
+  top: 50%;
+  //margin-top: -14px;
+  transform: tralslateY(-50%);
+  font-size: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 22px;
+  height: 40px;
+  transform: tralslateY(-50%);
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  margin-top: -20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 30px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      top: -5px;
+      left: 5px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 13px;
+      left: 5px;
+      transform: rotate(-45deg);
+    }
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  top: 50%;
+  left: 580px;
+  width: 22px;
+  height: 40px;
+  transform: tralslateY(-50%);
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  margin-top: -20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 30px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      top: -5px;
+      left: 5px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: 13px;
+      left: 5px;
+      transform: rotate(45deg);
+    }
+}
+
 .slide {
   width: 100%;
   height: 100%;
@@ -131,11 +216,9 @@
 }
 .slide_first {
   background: #544738 url("../../img/bg-slider-perf.jpg") 0 0 no-repeat;
-  // display: none;
 }
 .slide_second {
   background: #544738 url("../../img/bg-slider-drill.jpg") 0 0 no-repeat;
-  display: none;
 }
 .promo__card_sale {
   background: #85d179 url("../../img/bg-promo-sale.png") 196px 25px no-repeat;
