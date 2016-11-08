@@ -96,7 +96,7 @@ html(lang="ru")
               div.product__picture
                 img.product__image(src="img/bosh-bfg-9000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 9000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 9000
               div.old-price 32500 р.
@@ -105,7 +105,7 @@ html(lang="ru")
               div.product__picture
                 img.product__image(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
               div.old-price 25500 р.
@@ -114,7 +114,7 @@ html(lang="ru")
               div.product__picture
                 img.product__image(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
               div.old-price 30500 р.
@@ -124,7 +124,7 @@ html(lang="ru")
               div.product__picture
                 img.product__image(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
               div.old-price
@@ -195,9 +195,9 @@ html(lang="ru")
             h2.about__title Контакты
             p.about__text.
              Вы можете забрать товар сами, заехав в наш офис:
-            a.map-link#map-link(href="#")
+            a.map-link#btn-map(href="#")
               img.map-link__image(src="img/about-map.jpg" height="158" width="300" alt="Карта")
-            a.btn.btn_red.btn_big(href="#") Заблудились? Напишите нам!
+            a#btn-write-us.btn.btn_red.btn_big(href="#") Заблудились? Напишите нам!
     footer.footer-main
       div.footer-main__top
         div.container
@@ -238,7 +238,7 @@ html(lang="ru")
             a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
           div.design Разработано &mdash;
             a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
-    div.modal-content
+    div#modal-write-us.modal-content
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       form.modal-content__form(action="https://echo.htmlacademy.ru" method="post")
         div.modal-content__input-block
@@ -253,10 +253,10 @@ html(lang="ru")
           textarea.modal-content__input.modal-content__input_email-text(rows="10" cols="45" name="email-text" id="email-text-field" placeholder="В свободной форме" maxlength="300")
         div.modal-content__btn-block
           button.btn.btn_red.btn_big(type="submit") Отправить
-    div.modal-map
+    div#modal-map.modal-map
       button.modal-content__close(type="button" title="Закрыть") Закрыть
-      div.map-container#map
-    div.modal-bag
+      div#map.map-container
+    div#modal-bag.modal-bag
       button.modal-content__close(type="button" title="Закрыть") Закрыть
       div.modal-bag__text-block
         div.modal-bag__title Товар добавлен в корзину!
@@ -265,7 +265,7 @@ html(lang="ru")
         a.btn.btn_red.btn_big(href="#") Оформить заказ
         a.btn.btn_white.btn_big(href="#") Продолжить покупки
 
-    //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
     script(src="js/main.js")
 
 

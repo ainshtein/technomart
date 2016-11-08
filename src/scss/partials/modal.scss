@@ -35,6 +35,7 @@
   position: absolute;
   top: 10px;
   right: 9px;
+  z-index: 10;
   height: 28px;
   width: 28px;
   border: none;
@@ -171,6 +172,13 @@
   box-shadow: 0 0 14.7px 1.3px rgba(35, 31, 32, 0.5);
   display: none;
 }
+.map-container {
+  width: 940px;
+  height: 448px;
+}
+.modal-map__show {
+  display: block;
+}
 
 // ---------- .modal-bag ---------- //
 .modal-bag {
@@ -259,4 +267,7 @@
       &:active {
         opacity: 0.3;
       }
+}
+.modal-bag__show {
+  display: block;
 }

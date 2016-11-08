@@ -99,7 +99,7 @@
           <div class="row">
             <div class="product">
               <div class="product__picture"><img class="product__image" src="img/bosh-bfg-9000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 9000">
-                <div class="product__buy"><a class="btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
+                <div class="product__buy"><a class="btn-buy btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
               </div>
               <h3 class="product__title">Перфоратор BOSCH BFG 9000</h3>
               <div class="old-price">32500 р.</div>
@@ -107,7 +107,7 @@
             </div>
             <div class="product">
               <div class="product__picture"><img class="product__image" src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000">
-                <div class="product__buy"><a class="btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
+                <div class="product__buy"><a class="btn-buy btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
               </div>
               <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
               <div class="old-price">25500 р.</div>
@@ -115,7 +115,7 @@
             </div>
             <div class="product">
               <div class="product__picture"><img class="product__image" src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000">
-                <div class="product__buy"><a class="btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
+                <div class="product__buy"><a class="btn-buy btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
               </div>
               <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
               <div class="old-price">30500 р.</div>
@@ -124,7 +124,7 @@
             <div class="product">
               <div class="flag flag_new">новинка</div>
               <div class="product__picture"><img class="product__image" src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000">
-                <div class="product__buy"><a class="btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
+                <div class="product__buy"><a class="btn-buy btn btn_green" href="#">Купить</a><a class="btn btn_border-green" href="#">В закладки</a></div>
               </div>
               <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
               <div class="old-price"></div>
@@ -185,7 +185,7 @@
           </div>
           <div class="about__right">
             <h2 class="about__title">Контакты</h2>
-            <p class="about__text">Вы можете забрать товар сами, заехав в наш офис:</p><a class="map-link" id="map-link" href="#"><img class="map-link__image" src="img/about-map.jpg" height="158" width="300" alt="Карта"></a><a class="btn btn_red btn_big" href="#">Заблудились? Напишите нам!</a>
+            <p class="about__text">Вы можете забрать товар сами, заехав в наш офис:</p><a class="map-link" id="btn-map" href="#"><img class="map-link__image" src="img/about-map.jpg" height="158" width="300" alt="Карта"></a><a class="btn btn_red btn_big" id="btn-write-us" href="#">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </div>
@@ -227,7 +227,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-content">
+    <div class="modal-content" id="modal-write-us">
       <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
       <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-content__input-block">
@@ -249,17 +249,18 @@
         </div>
       </form>
     </div>
-    <div class="modal-map">
+    <div class="modal-map" id="modal-map">
       <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
       <div class="map-container" id="map"></div>
     </div>
-    <div class="modal-bag">
+    <div class="modal-bag" id="modal-bag">
       <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
       <div class="modal-bag__text-block">
         <div class="modal-bag__title">Товар добавлен в корзину!<span class="modal-bag__decoration"></span></div>
       </div>
       <div class="modal-bag__btn-block"><a class="btn btn_red btn_big" href="#">Оформить заказ</a><a class="btn btn_white btn_big" href="#">Продолжить покупки</a></div>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

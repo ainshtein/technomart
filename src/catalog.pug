@@ -46,7 +46,7 @@ html(lang="ru")
               li.menu__item
                 a.menu__link(href="#") Компания
               li.menu__item
-                a.menu__link(href="#") Каталог
+                a.menu__link Каталог
               li.menu__item
                 a.menu__link(href="#") Новости
               li.menu__item
@@ -121,7 +121,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
               div.old-price 25500 р.
@@ -130,7 +130,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
               div.old-price 30500 р.
@@ -139,7 +139,7 @@ html(lang="ru")
               div.product__picture.product__picture_new
                 img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
               div.old-price
@@ -148,7 +148,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
               div.old-price 25500 р.
@@ -157,7 +157,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
               div.old-price 30500 р.
@@ -166,7 +166,7 @@ html(lang="ru")
               div.product__picture.product__picture_new
                 img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
               div.old-price
@@ -175,7 +175,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-3000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 3000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 3000
               div.old-price 25500 р.
@@ -184,7 +184,7 @@ html(lang="ru")
               div.product__picture
                 img.product__imgage(src="img/bosh-bfg-6000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 6000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 6000
               div.old-price 30500 р.
@@ -193,7 +193,7 @@ html(lang="ru")
               div.product__picture.product__picture_new
                 img.product__imgage(src="img/bosh-bfg-2000.jpg" height="168" width="218" alt="Перфоратор BOSCH BFG 2000")
                 div.product__buy
-                  a.btn.btn_green(href="#") Купить
+                  a.btn-buy.btn.btn_green(href="#") Купить
                   a.btn.btn_border-green(href="#") В закладки
               h3.product__title Перфоратор BOSCH BFG 2000
               div.old-price
@@ -252,13 +252,14 @@ html(lang="ru")
             a.email__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
           div.design Разработано -
             a.design__link(href="https://htmlacademy.ru/" target="_blank") htmlacademy.ru
-    div.modal-bag
+    div#modal-bag.modal-bag
       button.modal-content__close(type="button" title="Закрыть") Закрыть
-      div.modal-bag__title Товар добавлен в корзину
-        span.modal-bag__decoration
-      div.modal-bag__bottom
+      div.modal-bag__text-block
+        div.modal-bag__title Товар добавлен в корзину!
+          span.modal-bag__decoration
+      div.modal-bag__btn-block
         a.btn.btn_red.btn_big(href="#") Оформить заказ
         a.btn.btn_white.btn_big(href="#") Продолжить покупки
-    //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+
     script(src="js/main.js")
 
